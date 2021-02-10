@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Blood Bank | Log in</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/font-awesome/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="assets/css/select2.min.css">
+  <!-- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="assets/css/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"> -->
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="index.html"><b>Blood</b>Bank</a>
+  </div>
+
+  <!-- register card form -->
+  <div class="card d-none" id="register">
+    <div class="card-body register-card-body">
+      <p class="login-box-msg">Register a new membership</p>
+
+      <form action="index.html" method="post">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Full name">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fa fa-user-alt"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <select class="form-control select2" style="width: 100%;">
+            <option>Choose blood group</option>
+            <option>A positive (+)</option>
+            <option>B positive (+)</option>
+          </select>
+
+        </div>
+        <div class="input-group mb-3">
+          <select class="form-control select2" style="width: 100%;">
+            <option>Choose Country</option>
+            <option>Bangladesh</option>
+            <option>Pakistan</option>
+          </select>
+
+        </div>
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Retype password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+              <label for="agreeTerms" class="text-gray">
+               I agree to the <a href="#">terms</a>
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-danger btn-block">Register</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+
+
+      <button class="text-center p-0 btn btn-link login">I already have a membership</button>
+    </div>
+    <!-- /.form-box -->
+  </div><!-- /.card -->
+
+  <!-- login card form -->
+  <div class="card" id="login">
+    <div class="card-body register-card-body">
+      <p class="login-box-msg">Sign in to start your session</p>
+  
+      <form action="../../index.html" method="post">
+       
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Password">
+          <div class="input-group-append content">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember" name="remember" value="agree">
+              <label for="remember" class="text-gray">
+                Remember Me
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn bg-maroon btn-block">Login</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+  
+  
+      <button class="btn p-0 btn-link forget-password">I forgot my password</button>
+      <button class=" btn p-0 btn-link register">Register a new membership</button>
+    </div>
+    <!-- /.form-box -->
+  </div><!-- /.card -->
+
+  <!-- forget password card form -->
+  <div class="card d-none" id="forget-password">
+    <div class="card-body register-card-body">
+      <p class="login-box-msg">You forgot your password? Here you can easily retrieve a new password.</p>
+  
+      <form action="../../index.html" method="post">
+  
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- /.col -->
+          <div class="col-12">
+            <button type="submit" class="btn bg-maroon btn-block">Send Password Reset Email</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+  
+      <button class=" btn p-0 btn-link login">Login</button>
+      <button class=" btn btn-link register">Register a new membership</button>
+    </div>
+    <!-- /.form-box -->
+  </div><!-- /.card -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/select2.full.min.js"></script>
+<!-- AdminLTE App -->
+<script src="assets/js/adminlte.min.js"></script>
+<script>
+  $('.select2').select2()
+</script>
+<script>
+  $('.login').click(function(){
+    $('#register').addClass('d-none');
+    $('#forget-password').addClass('d-none');
+    $('#login').removeClass('d-none');
+  });
+
+ $('.register').click(function () {
+    $('#login').addClass('d-none');
+    $('#forget-password').addClass('d-none');
+    $('#register').removeClass('d-none');
+  });
+
+  $('.forget-password').click(function () {
+      $('#login').addClass('d-none');
+      $('#register').addClass('d-none');
+      $('#forget-password').removeClass('d-none');
+    });
+</script>
+</body>
+</html>
