@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BloodGroup;
+use App\Models\BloodRequest;
 use Illuminate\Http\Request;
 
 class FrontEndController extends Controller
 {
     function Home(){
-        return view('frontend.home');
+        $bloodGroups = BloodGroup::all();
+        return view('frontend.home',compact('bloodGroups'));
     }
 
     function RequestForBlood(){
@@ -25,4 +28,6 @@ class FrontEndController extends Controller
     function Blog(){
         return view('frontend.blog');
     }
+
+
 }
