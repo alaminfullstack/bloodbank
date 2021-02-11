@@ -14,9 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+ Route::get('/', function () {
+     return view('welcome');
+ })->name('home');
+
+ Route::get('/join-us',function (){
+     return view('frontend.join-us');
+ })->name('join_us');
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
@@ -26,7 +30,7 @@ Route::get('/email/verify', function () {
     return view('auth.verify-email');
 })->middleware('auth')->name('verification.notice');
 
-Route::get('/',[FrontEndController::class,'Home'])->name('Home');
+//Route::get('/',[FrontEndController::class,'Home'])->name('Home');
 Route::get('/dashboard',[FrontEndController::class,'Home'])->name('Home')->middleware(['auth:sanctum', 'verified']);
 Route::get('/home',[FrontEndController::class,'Home'])->name('Home')->middleware(['auth:sanctum', 'verified']);
 Route::get('/request-for-blood',[FrontEndController::class,'RequestForBlood'])->name('RequestForBlood');

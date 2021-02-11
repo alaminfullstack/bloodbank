@@ -24,93 +24,19 @@
 
         <div class="row">
           <!-- .col-md-4 col-lg-3 col-sm-6 -->
-          <div class="col-md-4 col-xl-3 col-sm-6">
+            @foreach($bloodGroups as  $bloodGroup)
+                <div class="col-md-4 col-xl-3 col-sm-6">
             <div class="card text-center bg-dropdown">
               <div class="card-header">
                 <a href="#">
-                  <h4 class="text-uppercase mb-0">a positive (+)</h2>
+                  <h4 class="text-uppercase mb-0">{{ $bloodGroup->full_name }}</h4>
                 </a>
               </div>
             </div>
           </div>
+            @endforeach
           <!-- /.col-md-4 col-lg-3 col-sm-6 -->
-          <!-- .col-md-4 col-lg-3 col-sm-6 -->
-          <div class="col-md-4 col-xl-3 col-sm-6">
-            <div class="card text-center bg-dropdown">
-              <div class="card-header">
-                <a href="#">
-                  <h4 class="text-uppercase mb-0">a negative (-)</h4>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-4 col-lg-3 col-sm-6 -->
-          <!-- .col-md-4 col-lg-3 col-sm-6 -->
-          <div class="col-md-4 col-xl-3 col-sm-6">
-            <div class="card text-center bg-dropdown">
-              <div class="card-header">
-                <a href="#">
-                  <h4 class="text-uppercase mb-0">b positive (+)</h4>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-4 col-lg-3 col-sm-6 -->
-          <!-- .col-md-4 col-lg-3 col-sm-6 -->
-          <div class="col-md-4 col-xl-3 col-sm-6">
-            <div class="card text-center bg-dropdown">
-              <div class="card-header">
-                <a href="#">
-                  <h4 class="text-uppercase mb-0">b negative (-)</h4>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-4 col-lg-3 col-sm-6 -->
-          <!-- .col-md-4 col-lg-3 col-sm-6 -->
-          <div class="col-md-4 col-xl-3 col-sm-6">
-            <div class="card text-center bg-dropdown">
-              <div class="card-header">
-                <a href="#">
-                  <h4 class="text-uppercase mb-0">o positive (+)</h4>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-4 col-lg-3 col-sm-6 -->
-          <!-- .col-md-4 col-lg-3 col-sm-6 -->
-          <div class="col-md-4 col-xl-3 col-sm-6">
-            <div class="card text-center bg-dropdown">
-              <div class="card-header">
-                <a href="#" >
-                  <h4 class="text-uppercase mb-0">o negative (-)</h4>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-4 col-lg-3 col-sm-6 -->
-          <!-- .col-md-4 col-lg-3 col-sm-6 -->
-          <div class="col-md-4 col-xl-3 col-sm-6">
-            <div class="card text-center bg-dropdown">
-              <div class="card-header">
-                <a href="#">
-                  <h4 class="text-uppercase mb-0">ab positive (+)</h4>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-4 col-lg-3 col-sm-6 -->
-          <!-- .col-md-4 col-lg-3 col-sm-6 -->
-          <div class="col-md-4 col-xl-3 col-sm-6">
-            <div class="card text-center bg-dropdown">
-              <div class="card-header">
-                <a href="#">
-                  <h4 class="text-uppercase mb-0">ab negative (-)</h4>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-4 col-lg-3 col-sm-6 -->
+
 
         </div>
         <!-- /.row -->
@@ -136,7 +62,7 @@
             <!-- new requested blood content -->
             <div class="card bg-gradient-light">
               <div class="card-header border-bottom-0">
-                <strong class="text-uppercase text-maroon text-left" style="letter-spacing: 2px;">a positive (+)</strong>
+                <strong class="text-uppercase text-maroon text-left" style="letter-spacing: 2px;"></strong>
                 <small class="text-capitalize text-gray float-right">Requested On : <b>4 min ago</b></small>
               </div>
               <!-- cardbody -->
